@@ -444,6 +444,13 @@ NSString * const segmentBarItemID = @"JYSegmentBarItem";
                                                                                forIndexPath:indexPath];
   UIViewController *vc = self.viewControllers[indexPath.row];
   segmentBarItem.titleLabel.text = vc.title;
+  if (self.itemTitleFont != nil) {
+    segmentBarItem.titleLabel.font = self.itemTitleFont;
+  }
+    
+  if (self.itemTitleColor != nil) {
+    segmentBarItem.titleLabel.textColor = self.itemTitleColor;
+  }
   return segmentBarItem;
 }
 

@@ -85,6 +85,9 @@ sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
 @property (nonatomic, assign) UIEdgeInsets segmentBarInsets;
 @property (nonatomic, assign) CGFloat separatorHeight;
 
+@property (nonatomic, assign) UIFont *itemTitleFont;
+@property (nonatomic, assign) UIColor *itemTitleColor;
+
 /**
  *  By default segmentBar use viewController's title for segment's button title
  *  You should implement JYSlideSegmentDataSource & JYSlideSegmentDelegate instead of segmentBar delegate & datasource

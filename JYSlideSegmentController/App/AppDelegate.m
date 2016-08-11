@@ -32,6 +32,8 @@
   self.slideSegmentController.indicatorInsets = UIEdgeInsetsMake(0, 8, 0, 8);
   self.slideSegmentController.indicatorColor = [UIColor redColor];
   self.slideSegmentController.itemWidth = 80;
+  self.slideSegmentController.itemTitleColor = [UIColor redColor];
+    
   UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:self.slideSegmentController];
   self.window.rootViewController = navi;
 
